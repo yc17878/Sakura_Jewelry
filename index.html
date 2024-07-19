@@ -20,25 +20,26 @@
             text-align: center;
         }
         nav {
+            display: flex;
+            justify-content: space-around; /* Evenly space buttons */
+            align-items: center; /* Center align items */
             margin: 20px 0;
             background-color: #FFFFFF; /* White background for visibility */
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            text-align: center;
         }
         .nav-button {
             background-color: #FFD700; /* Gold */
             color: #333; /* Dark Slate Gray */
             border: none;
             padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 1.2em;
+            font-size: 1em;
             border-radius: 5px;
             cursor: pointer;
-            display: inline-block;
             text-decoration: none;
             text-align: center;
+            display: inline-block;
         }
         .nav-button:hover {
             background-color: #F7E7CE; /* Champagne */
@@ -103,8 +104,8 @@
         @media (max-width: 600px) {
             .nav-button {
                 display: block;
-                margin: 5px 0;
                 width: 100%; /* Full width on small screens */
+                margin-bottom: 5px; /* Space between buttons */
             }
         }
         @media (min-width: 768px) {
@@ -194,3 +195,4 @@
     </div>
 </body>
 </html>
+
