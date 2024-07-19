@@ -24,15 +24,16 @@
         nav a {
             color: #708090; /* Slate Gray */
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px; /* Reduced margin for smaller screens */
             font-size: 1.2em;
+            display: inline-block; /* Ensure links are touch-friendly */
         }
         nav a:hover {
             color: #FFD700; /* Gold */
             text-decoration: underline;
         }
         .section {
-            padding: 40px 20px;
+            padding: 20px 15px;
             margin: 0 auto;
         }
         .section:nth-of-type(odd) {
@@ -44,19 +45,19 @@
         .container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
         }
         .product {
             background: #FFFFF0; /* Ivory */
-            padding: 20px;
+            padding: 15px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            width: calc(33% - 20px);
+            width: calc(100% - 30px); /* Full width on mobile */
             box-sizing: border-box;
             text-align: center;
             border: 2px solid #FFD700; /* Gold */
-            border-radius: 20px;
+            border-radius: 15px;
         }
         .product img {
             max-width: 100%;
@@ -69,10 +70,10 @@
         .product h3 {
             margin: 10px 0;
             color: #708090; /* Slate Gray */
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
         .product .price {
-            font-size: 1.3em;
+            font-size: 1.2em;
             color: #FFD700; /* Gold */
             margin: 10px 0;
         }
@@ -85,15 +86,16 @@
             margin-top: 30px;
             font-size: 1em;
             color: #888;
+            padding: 15px;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .product {
-                width: calc(50% - 20px);
+                width: calc(50% - 30px); /* Two columns on larger screens */
             }
         }
-        @media (max-width: 480px) {
+        @media (min-width: 1024px) {
             .product {
-                width: 100%;
+                width: calc(33% - 30px); /* Three columns on even larger screens */
             }
         }
     </style>
@@ -173,4 +175,3 @@
     </div>
 </body>
 </html>
-
