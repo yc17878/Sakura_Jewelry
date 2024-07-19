@@ -9,7 +9,7 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #fafafa;
+            background-color: #fef6f6;
             color: #333;
         }
         h1 {
@@ -18,21 +18,34 @@
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #ff1493;
+            font-size: 2em;
+            border-bottom: 2px solid #ff69b4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
         .container {
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
             justify-content: center;
         }
         .product {
             background: #fff;
-            margin: 15px;
+            margin: 10px;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            width: calc(33% - 30px);
+            width: calc(33% - 20px);
             box-sizing: border-box;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #ff69b4;
+            border-radius: 20px;
         }
         .product:hover {
             transform: scale(1.05);
@@ -49,7 +62,7 @@
         .product h3 {
             margin: 10px 0;
             color: #ff1493;
-            font-size: 1.5em;
+            font-size: 1.6em;
         }
         .product p {
             margin: 0;
@@ -70,33 +83,56 @@
             font-size: 1em;
             color: #888;
         }
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Gleam & Grace Jewelry Collection</h1>
-    <div class="container">
-        <div class="product">
-            <img src="earring1.jpg" alt="Elegant Silver Earrings">
-            <h3>Elegant Silver Earrings</h3>
-            <p class="price">$25</p>
-            <p class="description">Made from 925 sterling silver with cubic zirconia. Perfect for a touch of sparkle!</p>
+    
+    <!-- Earrings Section -->
+    <div class="section" id="earrings">
+        <h2>Earrings</h2>
+        <div class="container">
+            <div class="product">
+                <img src="earring1.jpg" alt="Elegant Silver Earrings">
+                <h3>Elegant Silver Earrings</h3>
+                <p class="price">$25</p>
+                <p class="description">Made from 925 sterling silver with cubic zirconia. Perfect for a touch of sparkle!</p>
+            </div>
+            <div class="product">
+                <img src="earring2.jpg" alt="Gold Hoop Earrings">
+                <h3>Gold Hoop Earrings</h3>
+                <p class="price">$30</p>
+                <p class="description">Classic gold hoops with a modern twist. Ideal for everyday wear!</p>
+            </div>
+            <!-- Add more earrings here -->
         </div>
-        <div class="product">
-            <img src="necklace1.jpg" alt="Gold Plated Necklace">
-            <h3>Gold Plated Necklace</h3>
-            <p class="price">$45</p>
-            <p class="description">18k gold plated with a heart pendant. A sweet gift for someone special!</p>
-        </div>
-        <div class="product">
-            <img src="bracelet1.jpg" alt="Beaded Charm Bracelet">
-            <h3>Beaded Charm Bracelet</h3>
-            <p class="price">$30</p>
-            <p class="description">Handmade with colorful beads and charms. Fun and playful!</p>
-        </div>
-        <!-- Add more products as needed -->
     </div>
-    <div class="footer">
-        <p>Thank you for visiting Gleam & Grace Jewelry!</p>
-    </div>
-</body>
-</html>
+
+    <!-- Necklaces Section -->
+    <div class="section" id="necklaces">
+        <h2>Necklaces</h2>
+        <div class="container">
+            <div class="product">
+                <img src="necklace1.jpg" alt="Gold Plated Necklace">
+                <h3>Gold Plated Necklace</h3>
+                <p class="price">$45</p>
+                <p class="description">18k gold plated with a heart pendant. A sweet gift for someone special!</p>
+            </div>
+            <div class="product">
+                <img src="necklace2.jpg" alt="Silver Choker Necklace">
+                <h3>Silver Choker Necklace</h3>
+                <p class="price">$35</p>
+                <p class="description">Sleek and modern choker necklace in sterling silver. Elegant and versatile.</p>
+            </div>
+            <!-- Add more
+
