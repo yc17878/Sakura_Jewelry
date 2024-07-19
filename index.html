@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> <!-- Cute font -->
     <style>
         body {
-            font-family: 'Quicksand', sans-serif; /* Cute font for readability */
+            font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #FFFFF0; /* Ivory */
@@ -23,22 +23,26 @@
             margin: 20px 0;
             background-color: #FFFFFF; /* White background for visibility */
             padding: 10px;
-            border-radius: 10px; /* Rounded corners for a softer look */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            text-align: center;
         }
-        nav a {
-            color: #333; /* Dark Slate Gray for better visibility */
-            text-decoration: none;
-            margin: 0 10px; /* Adjusted margin for better spacing */
-            font-size: 1.2em; /* Slightly larger font size */
+        .nav-button {
+            background-color: #FFD700; /* Gold */
+            color: #333; /* Dark Slate Gray */
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
             display: inline-block;
-            padding: 10px; /* Padding for touch-friendly area */
-            border-radius: 5px; /* Rounded corners for links */
+            text-decoration: none;
+            text-align: center;
         }
-        nav a:hover {
-            color: #FFD700; /* Gold */
+        .nav-button:hover {
             background-color: #F7E7CE; /* Champagne */
-            text-decoration: underline;
+            color: #333;
         }
         .section {
             padding: 20px 15px;
@@ -97,9 +101,10 @@
             padding: 15px;
         }
         @media (max-width: 600px) {
-            nav a {
-                display: block; /* Stack links vertically on small screens */
-                margin: 5px 0; /* Adjust margin for vertical stacking */
+            .nav-button {
+                display: block;
+                margin: 5px 0;
+                width: 100%; /* Full width on small screens */
             }
         }
         @media (min-width: 768px) {
@@ -118,9 +123,9 @@
     <header>
         <h1>Gleam & Grace Jewelry Collection</h1>
         <nav>
-            <a href="#earrings">Earrings</a>
-            <a href="#necklaces">Necklaces</a>
-            <a href="#bracelets">Bracelets</a>
+            <a href="#earrings" class="nav-button">Earrings</a>
+            <a href="#necklaces" class="nav-button">Necklaces</a>
+            <a href="#other" class="nav-button">Other</a>
         </nav>
     </header>
 
@@ -164,23 +169,23 @@
         </div>
     </div>
 
-    <!-- Bracelets Section -->
-    <div id="bracelets" class="section">
-        <h2>Bracelets</h2>
+    <!-- Other Section -->
+    <div id="other" class="section">
+        <h2>Other</h2>
         <div class="container">
             <div class="product">
-                <img src="bracelet1.jpg" alt="Beaded Charm Bracelet">
-                <h3>Beaded Charm Bracelet</h3>
-                <p class="price">$30</p>
-                <p class="description">Handmade with colorful beads and charms. Fun and playful!</p>
+                <img src="other1.jpg" alt="Unique Brooch">
+                <h3>Unique Brooch</h3>
+                <p class="price">$20</p>
+                <p class="description">An exquisite brooch with intricate detailing. A unique addition to any collection!</p>
             </div>
             <div class="product">
-                <img src="bracelet2.jpg" alt="Leather Wrap Bracelet">
-                <h3>Leather Wrap Bracelet</h3>
-                <p class="price">$28</p>
-                <p class="description">Stylish leather wrap bracelet with metallic accents. Perfect for a trendy look!</p>
+                <img src="other2.jpg" alt="Stylish Hair Clip">
+                <h3>Stylish Hair Clip</h3>
+                <p class="price">$15</p>
+                <p class="description">A chic hair clip with a touch of sparkle. Perfect for a special occasion!</p>
             </div>
-            <!-- Add more bracelets here -->
+            <!-- Add more items here -->
         </div>
     </div>
 
