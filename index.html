@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gleam & Grace Jewelry Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> <!-- Cute font -->
     <style>
         body {
-            font-family: Arial, sans-serif; /* Updated font for readability */
+            font-family: 'Quicksand', sans-serif; /* Cute font for readability */
             margin: 0;
             padding: 0;
             background-color: #FFFFF0; /* Ivory */
@@ -20,22 +21,23 @@
         }
         nav {
             margin: 20px 0;
-            background-color: #F7E7CE; /* Champagne */
+            background-color: #FFFFFF; /* White background for visibility */
             padding: 10px;
             border-radius: 10px; /* Rounded corners for a softer look */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
         }
         nav a {
             color: #333; /* Dark Slate Gray for better visibility */
             text-decoration: none;
-            margin: 0 15px; /* Increased margin for easier clicking */
-            font-size: 1.4em; /* Larger font size for better readability */
+            margin: 0 10px; /* Adjusted margin for better spacing */
+            font-size: 1.2em; /* Slightly larger font size */
             display: inline-block;
-            padding: 10px; /* Added padding for touch-friendly area */
+            padding: 10px; /* Padding for touch-friendly area */
             border-radius: 5px; /* Rounded corners for links */
         }
         nav a:hover {
             color: #FFD700; /* Gold */
-            background-color: #FFFFFF; /* White background on hover for contrast */
+            background-color: #F7E7CE; /* Champagne */
             text-decoration: underline;
         }
         .section {
@@ -93,6 +95,12 @@
             font-size: 1em;
             color: #888; /* Light Gray */
             padding: 15px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block; /* Stack links vertically on small screens */
+                margin: 5px 0; /* Adjust margin for vertical stacking */
+            }
         }
         @media (min-width: 768px) {
             .product {
